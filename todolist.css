@@ -74,41 +74,41 @@ nav a {
 }
 
 .subject:nth-child(2) {
-    background-image: url('math1550.png');
+    background-image: url('images/math1550.png');
 }
 
 .subject:nth-child(3) {
-    background-image: url('math2600.png');
+    background-image: url('images/math2600.png');
 }
 
 .subject:nth-child(4) {
-    background-image: url('cois2750.png');
+    background-image: url('images/cois2750.png');
 }
 
 .subject:nth-child(5) {
-    background-image: url('cois2400.png');
+    background-image: url('images/cois2400.png');
 }
 
 .subject:nth-child(6) {
-    background-image: url('cois3380.png');
+    background-image: url('images/cois3380.png');
 }
 
 .subject:nth-child(7) {
-    background-image: url('cois3560.png');
+    background-image: url('images/cois3560.png');
 }
 
 .subject:nth-child(8) {
-    background-image: url('french.jpg');
+    background-image: url('images/french.jpg');
 }
 
 .hobby:nth-child(2) {
-    background-image: url('clay.jpg');
+    background-image: url('images/clay.jpg');
 }
 
 .hobby:nth-child(3) {
-    background-image: url('painting.jpg');
+    background-image: url('images/painting.jpg');
 }
 
 .hobby:nth-child(4) {
-    background-image: url('book.jpg');
+    background-image: url('images/book.jpg');
 }
