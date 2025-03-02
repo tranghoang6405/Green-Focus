@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Focus Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Focus Website</h1>
+        <nav>
+            <a href="#study">Study</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#todo">To-Do List</a>
+        </nav>
+
+        <div id="study" class="section">
+            <h2>Study & School Work</h2>
+            <p>Track your progress in studies, school assignments, and learning French.</p>
+        </div>
+
+        <div id="hobbies" class="section">
+            <h2>Hobbies</h2>
+            <p>Manage your hobbies like reading, clay crafting, and painting.</p>
+        </div>
+
+        <div id="todo" class="section">
+            <h2>To-Do List</h2>
+            <input type="text" id="taskInput" class="todo-input" placeholder="Add a task...">
+            <button onclick="addTask()" class="todo-button">Add Task</button>
+            <ul id="taskList" class="todo-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
