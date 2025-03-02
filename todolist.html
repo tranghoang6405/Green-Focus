@@ -3,35 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Focus Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Green Focus</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Study Focus Website</h1>
+        <h1 class="title">Green Focus</h1>
         <nav>
-            <a href="#study">Study</a>
+            <a href="#schoolwork">Schoolwork</a>
             <a href="#hobbies">Hobbies</a>
-            <a href="#todo">To-Do List</a>
+            <a href="#calendar">To-Do Calendar</a>
         </nav>
 
-        <div id="study" class="section">
-            <h2>Study & School Work</h2>
-            <p>Track your progress in studies, school assignments, and learning French.</p>
+        <div id="schoolwork" class="section">
+            <h2>Schoolwork</h2>
+            <div class="subject">
+                <h3>MATH 1550H</h3>
+                <p>Probability, random variables, probability distributions.
+                </p>
+                
+            </div>
+            <div class="subject">
+                <h3>MATH 2600H</h3>
+                <p>An introductory course in discrete mathematics that also involves essential topics related to
+                    computer science.
+                    Topics may include logic and sets, functions, relations, mathematical induction, counting
+                    techniques, recurrence relations, graph theory. 
+                    </p>
+                
+            </div>
+            <div class="subject">
+                <h3>COIS 2750H</h3>
+                <p>This is a general-interest course that examines the current state of computer 
+                    crime and forensic analysis. We  explore the spectrum of cybercrimes in detail, 
+                    considering how real-world crimes have incorporated technology, and the resultant 
+                    unique forms of offending that have emerged as a direct result. We consider the 
+                    emergent unique subcultures in online environments around a form of deviance, crime, 
+                    or a specific ideology. We also study how law enforcement agencies investigate and 
+                    enforce the laws that have been created to address these issues.</p>
+                
+            </div>
+            <div class="subject">
+                <h3>COIS 2400H</h3>
+                <p>An introduction to the programming language R and its applications in Data Science. A wide
+                    range of topics will be covered, with emphasis on techniques for data gathering, cleaning and
+                    manipulation, text and numerical analysis, and visualization to provide relevant applications in
+                    Data Science.
+                    </p>
+                
+            </div>
+            <div class="subject">
+                <h3>COIS 3380H</h3>
+                <p>ystems programming produces software that provides services to the computer hardware. Using
+                    systems programming techniques in a UNIX-style environment and a machine-oriented programming language, core topics will include procedural programming, shell
+                    programming, pipes, file processing, system calls, signals and basic network programming.
+                    </p>
+                
+            </div>
+            <div class="subject">
+                <h3>COIS 3560H</h3>
+                <p>This course is designed to provide
+                    students with a comprehensive understanding of HCI, focusing on the design, evaluation, and
+                    implementation of interactive computing systems, aiming to optimize user experiences and
+                    enhance overall usability. Students will delve into the theoretical foundations of HCI, exploring
+                    cognitive psychology, user-centred design, and social theories related to understanding users.
+                    The course will also cover the practical aspects of HCI, including usability testing, user interface
+                    (UI) design, and the integration of user feedback into the development process.</p>
+                
+            </div>
+            <div class="subject">
+                <h3>French Study</h3>
+                <p></p>
+                
+            </div>
         </div>
 
         <div id="hobbies" class="section">
             <h2>Hobbies</h2>
-            <p>Manage your hobbies like reading, clay crafting, and painting.</p>
+            <div class="hobby">
+                <h3>Clay</h3>
+                <p></p>
+                
+            </div>
+            <div class="hobby">
+                <h3>Painting</h3>
+                <p></p>
+                
+            </div>
+            <div class="hobby">
+                <h3>Reading</h3>
+                <p></p>
+                
+            </div>
         </div>
 
-        <div id="todo" class="section">
-            <h2>To-Do List</h2>
-            <input type="text" id="taskInput" class="todo-input" placeholder="Add a task...">
-            <button onclick="addTask()" class="todo-button">Add Task</button>
-            <ul id="taskList" class="todo-list"></ul>
+        <div id="calendar" class="section">
+            <h2>To-Do Calendar</h2>
+            <p>Select a date and add a completed task.</p>
+            <input type="date" id="dateInput" class="calendar-input">
+            <select id="taskType">
+                <option value="schoolwork">Schoolwork</option>
+                <option value="hobbies">Hobbies</option>
+            </select>
+            <button onclick="addPoint()" class="calendar-button">Add Task</button>
+            <div id="calendarView"></div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="todolist.js"></script>
 </body>
 </html>

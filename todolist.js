@@ -1,12 +1,12 @@
-function addTask() {
-    const taskInput = document.getElementById("taskInput");
-    const taskList = document.getElementById("taskList");
-    const taskText = taskInput.value.trim();
-    
-    if (taskText !== "") {
-        const li = document.createElement("li");
-        li.textContent = taskText;
-        taskList.appendChild(li);
-        taskInput.value = "";
+function addPoint() {
+    const dateInput = document.getElementById("dateInput").value;
+    const taskType = document.getElementById("taskType").value;
+    const calendarView = document.getElementById("calendarView");
+
+    if (dateInput) {
+        const newEntry = document.createElement("p");
+        newEntry.textContent = `${dateInput}: ${taskType === 'schoolwork' ? '📚' : '🎨'}`;
+        newEntry.style.color = taskType === 'schoolwork' ? "blue" : "green";
+        calendarView.appendChild(newEntry);
     }
 }
