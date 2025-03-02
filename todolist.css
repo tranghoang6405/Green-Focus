@@ -54,6 +54,13 @@ nav a {
     position: relative;
     min-height: 100px;
     align-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subject:hover, .hobby:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
 }
 
 .subject::before, .hobby::before {
@@ -111,4 +118,28 @@ nav a {
 
 .hobby:nth-child(4) {
     background-image: url('images/book.jpg');
+}
+
+/* Scroll-to-top button styling */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50; /* Green to match your "Green Focus" theme */
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 48px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-top-btn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    transform: scale(1.1);
 }
